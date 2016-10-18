@@ -12,8 +12,8 @@
     "test": "ember try:each"
   },
   "repository": {
-  "type": "git",
-  "url": "https://github.com/cherchezlafemme/emberjs-engine-far-cel-convert.git"
+    "type": "git",
+    "url": "https://github.com/cherchezlafemme/emberjs-engine-far-cel-convert.git"
   },
   "engines": {
     "node": ">= 0.10.0"
@@ -47,7 +47,8 @@
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.6",
-    "ember-cli-htmlbars": "^1.0.3"
+    "ember-cli-htmlbars": "^1.0.3",
+    "ember-truth-helpers": "1.2.0"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"

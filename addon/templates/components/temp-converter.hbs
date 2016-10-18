@@ -1,0 +1,24 @@
+<div id='converter'>
+  <div id='title'>
+    <h1 id='converter-title'>Celsius | Fahrenheit Converter</h1>
+  </div>
+  <div id='converter-input'>
+    <div id='converter-cell-content'>
+      {{input value=foo}}
+    </div>
+
+    <div id='type-temperature'> 
+      <select onchange={{action "selectTempType" value="target.value"}}>
+        {{#each typesOfTemp as |typeChoice|}}
+          <option value={{typeChoice}} selected={{eq selectTempType typeChoice}}>{{typeChoice}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <div id='convert-button'>
+      <button id='convert-button-content' {{action 'convertTemp'}}>Convert!</button>
+    </div>
+  </div><div id='result'>
+    <!-- result output goes here -->
+  </div>
+</div>

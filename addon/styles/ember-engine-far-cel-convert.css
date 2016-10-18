@@ -25,6 +25,15 @@
   padding: 10px;
 }
 
+#convert-button {
+  clear: both;
+  padding-top: 10px;
+}
+
+#convert-button-content {
+  font-size: 16px;
+}
+
 #converter-cell-content, #type-temperature {
   height: 100%;
   margin: auto;
