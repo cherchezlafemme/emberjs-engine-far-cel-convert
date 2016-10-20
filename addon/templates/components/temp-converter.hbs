@@ -4,7 +4,10 @@
   </div>
   <div id='converter-input'>
     <div id='converter-cell-content'>
-      {{input value=foo}}
+      <!-- {{input value=userTemp key-up="setInputTempVal"}} -->
+      <!-- {{input value=userTemp}} -->
+      <input type="text" {{bind-attr value=data }} {{action 'changed' on='change'}} />
+      <!-- Didn't work <input action={{ setInputTempVal value="target.value"}} /> -->
     </div>
 
     <div id='type-temperature'> 
